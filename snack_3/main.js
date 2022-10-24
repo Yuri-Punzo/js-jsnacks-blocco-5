@@ -19,10 +19,10 @@ console.log(wordReverser("Memento"));
 
 //versione con split/reverse/join method
 function wordReverser2(text) {
-    const splitter = text.split("")
-    const reverser = splitter.reverse()
-    const joiner = reverser.join("")
-    return joiner
+    const splitted = text.split("")
+    const reversed = splitted.reverse()
+    const jointed = reversed.join("")
+    return jointed
 }
 
 console.log("2nd function:", wordReverser2("otnemeM"));
