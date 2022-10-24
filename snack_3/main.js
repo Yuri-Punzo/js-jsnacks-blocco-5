@@ -2,6 +2,7 @@
 Scrivi una funzione che accetti una stringa come argomento e la ritorni
 girata (es. Ciao -> oaiC) */
 
+//versione con ciclo for
 function wordReverser(text) {
     let reversedWord = "" // creo una costante vuota che poi diventerà la parola immessa scritta al contrario
 
@@ -15,3 +16,13 @@ function wordReverser(text) {
 
 
 console.log(wordReverser("Memento"));
+
+//versione con split/reverse/join method
+function wordReverser2(text) {
+    text.split("")
+    text.reverse()
+    text.join("")
+    return text
+}
+
+console.log("2nd function:", wordReverser("Memento"));
