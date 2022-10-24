@@ -55,3 +55,21 @@ const arrayZucchine = [
         lunghezza: "14",
     }
 ]
+
+const zucchinePiccine = []
+const zucchineGrandi = []
+
+function misuraZucchine() {
+    arrayZucchine.forEach(element => {
+        let lunghezzaZucchina = Number(element.lunghezza)
+        console.log(lunghezzaZucchina);
+        if (lunghezzaZucchina >= 15) {
+            element.push(zucchineGrandi)
+        } else {
+            element.push(zucchinePiccine)
+        }
+    });
+}
+
+//console.log("piccole:", zucchinePiccine);
+//console.log("grandi:", zucchineGrandi);
