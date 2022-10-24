@@ -25,4 +25,4 @@ function wordReverser2(text) {
     return text
 }
 
-console.log("2nd function:", wordReverser("Memento"));
+console.log("2nd function:", wordReverser("otnemeM"));
