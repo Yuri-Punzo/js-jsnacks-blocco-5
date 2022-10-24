@@ -59,17 +59,36 @@ const arrayZucchine = [
 const zucchinePiccine = []
 const zucchineGrandi = []
 
-function misuraZucchine() {
-    arrayZucchine.forEach(element => {
-        let lunghezzaZucchina = Number(element.lunghezza)
-        console.log(lunghezzaZucchina);
-        if (lunghezzaZucchina >= 15) {
-            zucchineGrandi.push(element)
-        } else {
-            zucchinePiccine.push(element)
-        }
-    });
-}
 
-//console.log("piccole:", zucchinePiccine);
-//console.log("grandi:", zucchineGrandi);
+arrayZucchine.forEach(element => {
+    let lunghezzaZucchina = Number(element.lunghezza)
+    //console.log(lunghezzaZucchina);
+    if (lunghezzaZucchina >= 15) {
+        zucchineGrandi.push(element)
+    } else {
+        zucchinePiccine.push(element)
+    }
+});
+
+
+console.log("piccole:", zucchinePiccine);
+console.log("grandi:", zucchineGrandi);
+
+let pesoTotaleZucchinePiccine = 0
+zucchinePiccine.forEach(element => {
+    let pesoZucchina = Number(element.peso)
+    //console.log(pesoZucchina);
+    pesoTotaleZucchinePiccine += pesoZucchina
+    return pesoTotaleZucchinePiccine
+});
+console.log("peso totale piccole:", pesoTotaleZucchinePiccine);
+
+let pesoTotaleZucchineGrandi = 0
+zucchineGrandi.forEach(element => {
+    let pesoZucchina = Number(element.peso)
+    //console.log(pesoZucchina);
+    pesoTotaleZucchineGrandi += pesoZucchina
+    return pesoTotaleZucchineGrandi
+});
+console.log("peso totale grandi:", pesoTotaleZucchineGrandi);
+
