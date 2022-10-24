@@ -92,3 +92,6 @@ zucchineGrandi.forEach(element => {
 });
 console.log("peso totale grandi:", pesoTotaleZucchineGrandi);
 
+
+//SI POTREBBE ACCORPARE LA PARTE FINALE IN UN UNICA FUNZIONE CHE FACCIA IL PESO E POI USARLA SUI DUE ARRAY...PIù SNELLA ED EFFICACE...
+
