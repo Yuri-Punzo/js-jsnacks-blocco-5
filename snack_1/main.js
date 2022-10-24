@@ -61,15 +61,16 @@ const arrayZucchine = [
 function pesatoreDiZucchine() {
     let pesoTotale = 0
     for (let i = 0; i < arrayZucchine.length; i++) {
-    const zucchina = arrayZucchine[i]
-    //console.log(Number(zucchina.peso));
-    let pesoZucchina = Number(zucchina.peso)
-    pesoTotale += pesoZucchina
+        const zucchina = arrayZucchine[i]
+        //console.log(Number(zucchina.peso));
+        let pesoZucchina = Number(zucchina.peso)
+        pesoTotale += pesoZucchina
+    }
+    return pesoTotale
 }
-return pesoTotale
-}
-
 console.log(pesatoreDiZucchine());
+
+
 
 //versione con ciclo FOR EACH
 let pesoTotale = 0
@@ -79,7 +80,6 @@ arrayZucchine.forEach(element => {
     pesoTotale += pesoZucchina
     return pesoTotale
 });
-
 console.log(pesoTotale);
 
 
