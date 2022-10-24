@@ -64,9 +64,9 @@ function misuraZucchine() {
         let lunghezzaZucchina = Number(element.lunghezza)
         console.log(lunghezzaZucchina);
         if (lunghezzaZucchina >= 15) {
-            element.push(zucchineGrandi)
+            zucchineGrandi.push(element)
         } else {
-            element.push(zucchinePiccine)
+            zucchinePiccine.push(element)
         }
     });
 }
